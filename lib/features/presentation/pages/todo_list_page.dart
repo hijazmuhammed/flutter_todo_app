@@ -8,7 +8,6 @@ import '../widgets/common/gradient_background.dart';
 import '../widgets/common/custom_modal.dart';
 import '../widgets/list_page_widgets/todo_item_card.dart';
 import '../widgets/empty_state_widget.dart';
-import '../widgets/list_page_widgets/custom_drawer.dart';
 import '../widgets/list_page_widgets/todo_list_header.dart';
 import '../widgets/list_page_widgets/error_state_widget.dart';
 import '../widgets/list_page_widgets/custom_fab.dart';
@@ -33,7 +32,6 @@ class TodoListPage extends StatelessWidget {
         return result ?? true;
       } as PopInvokedWithResultCallback<dynamic>?,
       child: Scaffold(
-      drawer: const CustomDrawer(),
       body: GradientBackground(
         child: SafeArea(
         child: Column(

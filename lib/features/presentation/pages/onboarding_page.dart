@@ -17,7 +17,7 @@ class OnboardingPage extends StatelessWidget {
       body: GradientBackground(
         child: Stack(
         children: [
-          // Background decorative blurred circles
+          // Background decorative circles
           _buildBackgroundDecorations(),
           
           // Main content
@@ -33,10 +33,10 @@ class OnboardingPage extends StatelessWidget {
                     height: 280,
                     child: Stack(
                       children: [
-                        // Stopwatch - Figma: left:104px, top:69px, 40x50, angle:0°
+                        // Stopwatch 
                         Positioned(
-                          left: 82, // 104 - 22 (container padding)
-                          top: 0, // 69 - 69 (starting offset)
+                          left: 82, 
+                          top: 0, 
                           child: Image.asset(
                             'lib/core/assets/stop_watch.png',
                             width: 40,
@@ -45,12 +45,12 @@ class OnboardingPage extends StatelessWidget {
                           ),
                         ),
                         
-                        // Calendar - Figma: left:276px, top:136px, 31.35x26.6, angle:-12.86°
+                        // Calendar 
                         Positioned(
-                          left: 254, // 276 - 22
-                          top: 67, // 136 - 69
+                          left: 254,
+                          top: 67,
                           child: Transform.rotate(
-                            angle: -0.224, // -12.86 degrees in radians (negative for clockwise)
+                            angle: -0.224, 
                             child: Image.asset(
                               'lib/core/assets/calender.png',
                               width: 31.348,
@@ -60,10 +60,10 @@ class OnboardingPage extends StatelessWidget {
                           ),
                         ),
                         
-                        // Pie chart - Figma: left:84px, top:180px, 26x26, angle:0°
+                        // Pie chart 
                         Positioned(
-                          left: 62, // 84 - 22
-                          top: 111, // 180 - 69
+                          left: 62,
+                          top: 111,
                           child: Image.asset(
                             'lib/core/assets/pie_chart.png',
                             width: 26,
@@ -72,10 +72,10 @@ class OnboardingPage extends StatelessWidget {
                           ),
                         ),
                         
-                        // Person sitting - Figma: left:131px, top:147px, 159x184, angle:0°
+                        // Person sitting 
                         Positioned(
-                          left: 109, // 131 - 22
-                          top: 78, // 147 - 69
+                          left: 109,
+                          top: 78,
                           child: Image.asset(
                             'lib/core/assets/person_sitting.png',
                             width: 159,
@@ -84,12 +84,12 @@ class OnboardingPage extends StatelessWidget {
                           ),
                         ),
                         
-                        // Smartphone - Figma: left:245px, top:225px, 62x42, angle:-180°
+                        // Smartphone 
                         Positioned(
-                          left: 223, // 245 - 22
-                          top: 156, // 225 - 69
+                          left: 223,
+                          top: 156,
                           child: Transform.rotate(
-                            angle: -3.14159, // -180 degrees in radians
+                            angle: -3.14159,
                             child: Image.asset(
                               'lib/core/assets/smartnotification.png',
                               width: 62,
@@ -99,10 +99,10 @@ class OnboardingPage extends StatelessWidget {
                           ),
                         ),
                         
-                        // Flower vase - Figma: left:79px, top:279px, 36x52, angle:0°
+                        // Flower vase 
                         Positioned(
-                          left: 57, // 79 - 22
-                          top: 210, // 279 - 69
+                          left: 57,
+                          top: 210,
                           child: Image.asset(
                             'lib/core/assets/flower.png',
                             width: 36,
@@ -111,12 +111,12 @@ class OnboardingPage extends StatelessWidget {
                           ),
                         ),
                         
-                        // Coffee cup - Figma: left:67px, top:310px, 18x22, angle:-180°
+                        // Coffee cup 
                         Positioned(
-                          left: 45, // 67 - 22
-                          top: 241, // 310 - 69
+                          left: 45,
+                          top: 241,
                           child: Transform.rotate(
-                            angle: -3.14159, // -180 degrees in radians
+                            angle: -3.14159,
                             child: Image.asset(
                               'lib/core/assets/coffee.png',
                               width: 18,
@@ -240,7 +240,7 @@ class OnboardingPage extends StatelessWidget {
   Widget _buildBackgroundDecorations() {
     return Stack(
       children: [
-        // Ellipse 1 - Blue gradient (top right)
+        // Ellipse 1 
         Positioned(
           left: 333,
           top: 232,
@@ -269,7 +269,7 @@ class OnboardingPage extends StatelessWidget {
           ),
         ),
         
-        // Ellipse 2 - Green gradient (left)
+        // Ellipse 2 
         Positioned(
           left: -15,
           top: 126,
@@ -290,7 +290,7 @@ class OnboardingPage extends StatelessWidget {
           ),
         ),
         
-        // Ellipse 3 - Cyan gradient (left middle)
+        // Ellipse 3 
         Positioned(
           left: 76,
           top: 424,
@@ -311,7 +311,7 @@ class OnboardingPage extends StatelessWidget {
           ),
         ),
         
-        // Ellipse 4 - Yellow gradient (top)
+        // Ellipse 4 
         Positioned(
           left: 263,
           top: 0,
@@ -332,7 +332,7 @@ class OnboardingPage extends StatelessWidget {
           ),
         ),
         
-        // Ellipse 11 - Orange gradient (bottom right)
+        // Ellipse 11 
         Positioned(
           left: 240,
           top: 767,

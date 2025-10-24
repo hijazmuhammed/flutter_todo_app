@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../core/constants/app_colors.dart';
 
-/// Helper class to determine UI properties based on todo data
-/// Separates presentation logic from UI widgets
+// Helper class to determine UI properties based on todo data
 class TodoUiHelper {
-  /// Get icon background color based on todo title
+  // Get icon background color based on todo title
   static Color getIconBackgroundColor(String title) {
     final lowerTitle = title.toLowerCase();
     if (lowerTitle.contains('office')) {
@@ -18,7 +17,7 @@ class TodoUiHelper {
     }
   }
 
-  /// Get icon color based on todo title
+  // Get icon color based on todo title
   static Color getIconColor(String title) {
     final lowerTitle = title.toLowerCase();
     if (lowerTitle.contains('office')) {
@@ -32,7 +31,7 @@ class TodoUiHelper {
     }
   }
 
-  /// Get icon data based on todo title
+  // Get icon data based on todo title
   static IconData getIcon(String title) {
     final lowerTitle = title.toLowerCase();
     if (lowerTitle.contains('office')) {

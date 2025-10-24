@@ -1,5 +1,5 @@
 import 'package:get_it/get_it.dart';
-// import 'core/network/supabase_client.dart'; // Commented out for mock data
+import 'core/network/supabase_client.dart';
 import 'features/data/datasources/todo_remote_data_source.dart';
 import 'features/data/repositories/todo_repository_impl.dart';
 import 'features/domain/repositories/todo_repository.dart';
@@ -39,9 +39,9 @@ Future<void> init() async {
   
   // Data Sources
   sl.registerLazySingleton<TodoRemoteDataSource>(
-    () => TodoRemoteDataSourceImpl(client: null), // Pass null since we're using mock data
+    () => TodoRemoteDataSourceImpl(client: SupabaseConfig.client),
   );
   
-  // External (commented out for mock data)
-  // sl.registerLazySingleton(() => SupabaseConfig.client);
+  // External
+  sl.registerLazySingleton(() => SupabaseConfig.client);
 }

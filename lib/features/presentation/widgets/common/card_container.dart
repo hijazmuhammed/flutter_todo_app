@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import '../../../../core/constants/app_colors.dart';
 
-/// Reusable card container with consistent shadow and styling
-/// Used for input fields, todo cards, and other elevated content
+// Reusable card container with consistent shadow and styling
+// Used for input fields, todo cards, and other elevated content
 class CardContainer extends StatelessWidget {
   final Widget child;
   final EdgeInsetsGeometry? padding;

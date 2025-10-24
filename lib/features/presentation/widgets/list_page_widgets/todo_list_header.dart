@@ -30,15 +30,9 @@ class TodoListHeader extends StatelessWidget {
           // Top row with profile and notification
           Row(
             children: [
-              // Profile section with drawer trigger
-              Builder(
-                builder: (BuildContext scaffoldContext) {
-                  return ProfileSection(
-                    onTap: onProfileTap ?? () {
-                      Scaffold.of(scaffoldContext).openDrawer();
-                    },
-                  );
-                },
+              // Profile section
+              ProfileSection(
+                onTap: onProfileTap,
               ),
               const Spacer(),
               // Notification icon
