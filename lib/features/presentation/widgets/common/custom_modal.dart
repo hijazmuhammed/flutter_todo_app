@@ -107,7 +107,7 @@ class CustomModal {
                 width: 40,
                 height: 4,
                 decoration: BoxDecoration(
-                  color: AppColors.textSecondary.withOpacity(0.3),
+                  color: AppColors.textSecondary.withValues(alpha: 0.3),
                   borderRadius: BorderRadius.circular(2),
                 ),
               ),
@@ -349,35 +349,35 @@ class _ModalContent extends StatelessWidget {
         return _ModalTypeConfig(
           icon: Icons.check_circle,
           iconColor: AppColors.success,
-          backgroundColor: AppColors.success.withOpacity(0.1),
+          backgroundColor: AppColors.success.withValues(alpha: 0.1),
           primaryButtonColor: AppColors.primary,
         );
       case ModalType.error:
         return _ModalTypeConfig(
           icon: Icons.error,
           iconColor: AppColors.error,
-          backgroundColor: AppColors.error.withOpacity(0.1),
+          backgroundColor: AppColors.error.withValues(alpha: 0.1),
           primaryButtonColor: AppColors.error,
         );
       case ModalType.warning:
         return _ModalTypeConfig(
           icon: Icons.warning,
           iconColor: AppColors.warning,
-          backgroundColor: AppColors.warning.withOpacity(0.1),
+          backgroundColor: AppColors.warning.withValues(alpha: 0.1),
           primaryButtonColor: AppColors.warning,
         );
       case ModalType.info:
         return _ModalTypeConfig(
           icon: Icons.info,
           iconColor: AppColors.info,
-          backgroundColor: AppColors.info.withOpacity(0.1),
+          backgroundColor: AppColors.info.withValues(alpha: 0.1),
           primaryButtonColor: AppColors.info,
         );
       case ModalType.neutral:
         return _ModalTypeConfig(
           icon: null,
           iconColor: AppColors.primary,
-          backgroundColor: AppColors.primary.withOpacity(0.1),
+          backgroundColor: AppColors.primary.withValues(alpha: 0.1),
           primaryButtonColor: AppColors.primary,
         );
     }
